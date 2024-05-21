@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Card</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .card {
+        width: 300px;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-item {
+        margin-bottom: 10px;
+    }
+
+    .card-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .card-item label {
+        font-weight: bold;
+    }
+
+    .card-item input {
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .card-footer {
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-header">Animated Card</div>
+    <div class="card-body">
+        <div class="card-item">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="card-item">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="card-item">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="card-item">
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+    </div>
+    <div class="card-footer">Examples Of Work</div>
+</div>
+
+</body>
+</html>
